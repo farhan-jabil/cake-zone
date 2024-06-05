@@ -30,7 +30,7 @@ const NavbarBottom = () => {
   return (
     <>
       <div>
-        <nav className="hidden md:block bg-[#2B2825] border-gray-200 dark:bg-gray-900">
+        <nav className="hidden lg:block bg-[#2B2825] border-gray-200 dark:bg-gray-900">
           <div className="max-w-screen-xl flex items-center mx-auto">
             <div className="mx-auto w-full md:w-auto" id="navbar-default">
               <ul className="font-medium text-lg flex flex-col mt-4 border border-gray-100 rounded-lg md:flex-row rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -104,7 +104,7 @@ const NavbarBottom = () => {
             </div>
           </div>
         </nav>
-        <nav className="block md:hidden bg-[#2B2825] border-b-[1px] border-gray-200 dark:bg-gray-900 p-4">
+        <nav className="block lg:hidden bg-[#2B2825] border-b-[1px] border-gray-200 dark:bg-gray-900 p-4">
           <div className="flex justify-between items-center">
             <Link to="/">
               <div className="flex h-full text-[26px] space-x-3 justify-center items-center">
