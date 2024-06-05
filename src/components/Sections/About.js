@@ -2,9 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
+    <>
+    <div className='about py-96'>
       About
     </div>
+    </>
   )
 }
 

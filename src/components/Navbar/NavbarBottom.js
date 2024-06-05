@@ -1,30 +1,11 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const NavbarBottom = () => {
-  const location = useLocation();
-  const currentPath = location.pathname;
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
-
-  const getLinkClass = (path) =>
-    `block rounded transition duration-500 ease-in-out ${
-      currentPath === path
-        ? "text-[#E88F2F]"
-        : "text-white hover:text-[#E88F2F]"
-    } md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent`;
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const toggleMobileDropdown = () => {
-    setIsMobileDropdownOpen(!isMobileDropdownOpen);
   };
 
   return (
@@ -35,69 +16,66 @@ const NavbarBottom = () => {
             <div className="mx-auto w-full md:w-auto" id="navbar-default">
               <ul className="font-medium text-lg flex flex-col mt-4 border border-gray-100 rounded-lg md:flex-row rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li className="py-8 px-4 cursor-pointer">
-                  <Link to="/" className={getLinkClass("/")}>
+                  <Link
+                    to="hero"
+                    smooth={true}
+                    className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  >
                     HOME
                   </Link>
                 </li>
                 <li className="py-8 px-4 cursor-pointer">
-                  <Link to="/about" className={getLinkClass("/about")}>
+                  <Link
+                    to="about"
+                    smooth={true}
+                    className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  >
                     ABOUT US
                   </Link>
                 </li>
                 <li className="py-8 px-4 cursor-pointer">
                   <Link
-                    to="/menu-pricing"
-                    className={getLinkClass("/menu-pricing")}
+                    to="menu-pricing"
+                    smooth={true}
+                    className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   >
                     MENU & PRICING
                   </Link>
                 </li>
                 <li className="py-8 px-4 cursor-pointer">
                   <Link
-                    to="/master-pages"
-                    className={getLinkClass("/master-pages")}
+                    to="menu-pricing"
+                    smooth={true}
+                    className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   >
-                    MASTER PAGES
+                    MENU & PRICING
                   </Link>
                 </li>
-                <li className="relative py-8 px-4 cursor-pointer">
-                  <div
-                    onClick={toggleDropdown}
-                    className={`flex items-center justify-between cursor-pointer ${
-                      currentPath.startsWith("/pages")
-                        ? "text-[#E88F2F]"
-                        : "text-white hover:text-[#E88F2F]"
-                    }`}
+                <li className="py-8 px-4 cursor-pointer">
+                  <Link
+                    to="service"
+                    smooth={true}
+                    className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   >
-                    <span>PAGES</span>
-                    <i className="fa-solid fa-caret-down ml-[6px]"></i>
-                  </div>
-                  {isDropdownOpen && (
-                    <ul className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg dark:bg-gray-800">
-                      <li>
-                        <Link
-                          to="/service"
-                          className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600"
-                          onClick={() => setIsDropdownOpen(false)}
-                        >
-                          Our Service
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/testimonial"
-                          className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600"
-                          onClick={() => setIsDropdownOpen(false)}
-                        >
-                          Testimonial
-                        </Link>
-                      </li>
-                    </ul>
-                  )}
+                    SERVICES
+                  </Link>
                 </li>
                 <li className="py-8 px-4 cursor-pointer">
-                  <Link to="/contact" className={getLinkClass("/contact")}>
-                    CONTACT US
+                  <Link
+                    to="testimonial"
+                    smooth={true}
+                    className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  >
+                    TESTIMONIAL
+                  </Link>
+                </li>
+                <li className="py-8 px-4 cursor-pointer">
+                  <Link
+                    to="contact"
+                    smooth={true}
+                    className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  >
+                    CONTACT
                   </Link>
                 </li>
               </ul>
@@ -106,14 +84,14 @@ const NavbarBottom = () => {
         </nav>
         <nav className="block lg:hidden bg-[#2B2825] border-b-[1px] border-gray-200 dark:bg-gray-900 p-4">
           <div className="flex justify-between items-center">
-            <Link to="/">
+            <a href="#home">
               <div className="flex h-full text-[26px] space-x-3 justify-center items-center">
                 <div>
                   <i className="fa-solid fa-cake-candles text-[#E88F2F]"></i>
                 </div>
                 <div className="font-bold text-white">CAKEZONE</div>
               </div>
-            </Link>
+            </a>
             <div
               className="py-1 px-4 border-[1px] border-[#9F9E9D] cursor-pointer"
               onClick={toggleMobileMenu}
@@ -129,8 +107,9 @@ const NavbarBottom = () => {
             <ul className="font-medium text-lg flex flex-col mt-4 dark:bg-gray-800 dark:border-gray-700">
               <li className="py-4 px-4 cursor-pointer">
                 <Link
-                  to="/"
-                  className={getLinkClass("/")}
+                  to="home"
+                  smooth={true}
+                  className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   onClick={toggleMobileMenu}
                 >
                   HOME
@@ -138,79 +117,32 @@ const NavbarBottom = () => {
               </li>
               <li className="py-4 px-4 cursor-pointer">
                 <Link
-                  to="/about"
-                  className={getLinkClass("/about")}
+                  to="about"
+                  smooth={true}
+                  className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   onClick={toggleMobileMenu}
                 >
-                  ABOUT US
+                  ABOUT
                 </Link>
               </li>
               <li className="py-4 px-4 cursor-pointer">
                 <Link
-                  to="/menu-pricing"
-                  className={getLinkClass("/menu-pricing")}
+                  to="services"
+                  smooth={true}
+                  className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   onClick={toggleMobileMenu}
                 >
-                  MENU & PRICING
+                  SERVICES
                 </Link>
               </li>
               <li className="py-4 px-4 cursor-pointer">
                 <Link
-                  to="/master-pages"
-                  className={getLinkClass("/master-pages")}
+                  to="contact"
+                  smooth={true}
+                  className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   onClick={toggleMobileMenu}
                 >
-                  MASTER PAGES
-                </Link>
-              </li>
-              <li className="relative py-4 px-4 cursor-pointer">
-                <div
-                  onClick={toggleMobileDropdown}
-                  className={`flex items-center cursor-pointer ${
-                    currentPath.startsWith("/pages")
-                      ? "text-[#E88F2F]"
-                      : "text-white hover:text-[#E88F2F]"
-                  }`}
-                >
-                  <span>PAGES</span>
-                  <i className="fa-solid fa-caret-down ml-[10px]"></i>
-                </div>
-                {isMobileDropdownOpen && (
-                  <ul className="mt-2 pl-4 border-l-2 border-gray-700">
-                    <li className="py-2">
-                      <Link
-                        to="/service"
-                        className="block text-white dark:text-gray-200 dark:hover:bg-gray-600"
-                        onClick={() => {
-                          setIsMobileDropdownOpen(false);
-                          setIsMobileMenuOpen(false);
-                        }}
-                      >
-                        Our Service
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        to="/testimonial"
-                        className="block text-white dark:text-gray-200 dark:hover:bg-gray-600"
-                        onClick={() => {
-                          setIsMobileDropdownOpen(false);
-                          setIsMobileMenuOpen(false);
-                        }}
-                      >
-                        Testimonial
-                      </Link>
-                    </li>
-                  </ul>
-                )}
-              </li>
-              <li className="py-4 px-4 cursor-pointer">
-                <Link
-                  to="/contact"
-                  className={getLinkClass("/contact")}
-                  onClick={toggleMobileMenu}
-                >
-                  CONTACT US
+                  CONTACT
                 </Link>
               </li>
             </ul>

@@ -2,9 +2,11 @@ import React from 'react'
 
 const MenuPricing = () => {
   return (
-    <div>
+    <>
+    <div className='menu-pricing py-96'>
       Menu & Pricing
     </div>
+    </>
   )
 }
 

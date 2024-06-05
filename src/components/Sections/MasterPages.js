@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const MasterPages = () => {
   return (
-    <div>
-      Master & Pages
-    </div>
-  )
-}
+    <>
+      <div className="master-pages py-96">Master & Pages</div>
+    </>
+  );
+};
 
-export default MasterPages
+export default MasterPages;
