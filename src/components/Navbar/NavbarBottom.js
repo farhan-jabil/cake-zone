@@ -19,6 +19,8 @@ const NavbarBottom = () => {
                   <Link
                     to="hero"
                     smooth={true}
+                    spy={true}
+                    activeClass="active"
                     className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   >
                     HOME
@@ -28,6 +30,8 @@ const NavbarBottom = () => {
                   <Link
                     to="about"
                     smooth={true}
+                    spy={true}
+                    activeClass="active"
                     className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   >
                     ABOUT US
@@ -37,15 +41,8 @@ const NavbarBottom = () => {
                   <Link
                     to="menu-pricing"
                     smooth={true}
-                    className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-                  >
-                    MENU & PRICING
-                  </Link>
-                </li>
-                <li className="py-8 px-4 cursor-pointer">
-                  <Link
-                    to="menu-pricing"
-                    smooth={true}
+                    spy={true}
+                    activeClass="active"
                     className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   >
                     MENU & PRICING
@@ -55,6 +52,8 @@ const NavbarBottom = () => {
                   <Link
                     to="service"
                     smooth={true}
+                    spy={true}
+                    activeClass="active"
                     className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   >
                     SERVICES
@@ -64,6 +63,8 @@ const NavbarBottom = () => {
                   <Link
                     to="testimonial"
                     smooth={true}
+                    spy={true}
+                    activeClass="active"
                     className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   >
                     TESTIMONIAL
@@ -73,6 +74,8 @@ const NavbarBottom = () => {
                   <Link
                     to="contact"
                     smooth={true}
+                    spy={true}
+                    activeClass="active"
                     className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   >
                     CONTACT
@@ -107,8 +110,10 @@ const NavbarBottom = () => {
             <ul className="font-medium text-lg flex flex-col mt-4 dark:bg-gray-800 dark:border-gray-700">
               <li className="py-4 px-4 cursor-pointer">
                 <Link
-                  to="home"
+                  to="hero"
                   smooth={true}
+                  spy={true}
+                  activeClass="active"
                   className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   onClick={toggleMobileMenu}
                 >
@@ -119,6 +124,8 @@ const NavbarBottom = () => {
                 <Link
                   to="about"
                   smooth={true}
+                  spy={true}
+                  activeClass="active"
                   className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   onClick={toggleMobileMenu}
                 >
@@ -127,8 +134,22 @@ const NavbarBottom = () => {
               </li>
               <li className="py-4 px-4 cursor-pointer">
                 <Link
+                  to="menu-pricing"
+                  smooth={true}
+                  spy={true}
+                  activeClass="active"
+                  className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  onClick={toggleMobileMenu}
+                >
+                  MENU & PRICING
+                </Link>
+              </li>
+              <li className="py-4 px-4 cursor-pointer">
+                <Link
                   to="services"
                   smooth={true}
+                  spy={true}
+                  activeClass="active"
                   className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   onClick={toggleMobileMenu}
                 >
@@ -137,8 +158,22 @@ const NavbarBottom = () => {
               </li>
               <li className="py-4 px-4 cursor-pointer">
                 <Link
+                  to="testimonial"
+                  smooth={true}
+                  spy={true}
+                  activeClass="active"
+                  className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  onClick={toggleMobileMenu}
+                >
+                  TESTIMONIAL
+                </Link>
+              </li>
+              <li className="py-4 px-4 cursor-pointer">
+                <Link
                   to="contact"
                   smooth={true}
+                  spy={true}
+                  activeClass="active"
                   className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   onClick={toggleMobileMenu}
                 >

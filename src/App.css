@@ -18,8 +18,34 @@ body {
   font-family: 'Pacifico';
 }
 
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 10px;
+  left: 50%;
+  bottom: 0;
+  margin-left: -30px;
+  background: #E88F2F;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 180px;
+  height: 2px;
+  left: 50%;
+  bottom: 4px;
+  margin-left: -90px;
+  background: #E88F2F;
+}
+
 .hero {
   background: url("./images/hero.jpg") top right no-repeat;
+}
+
+.active {
+  color: #E88F2F !important;
 }
 
 .btn-play::before {

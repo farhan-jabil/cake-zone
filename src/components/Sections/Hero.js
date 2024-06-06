@@ -3,16 +3,16 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <div className="hero py-12 !bg-cover">
+      <div className="hero mb-[3rem] py-12 !bg-cover">
         <div className="container py-12">
-          <div className="pacifico-family text-[#E88F2F] text-center lg:text-left font-bold text-3xl lg:text-[2.5rem] mb-4">
+          <div className="pacifico-family text-[#E88F2F] text-center lg:text-left font-bold text-3xl lg:text-[2.5rem] mb-6">
             Super Crispy
           </div>
-          <div className="text-white font-bold text-5xl text-center lg:text-left lg:text-[5rem] mb-4">CAKEZONE</div>
-          <div className="text-white font-bold text-center lg:text-left text-3xl lg:text-[2.5rem] mb-5">
+          <div className="text-white font-bold text-5xl text-center lg:text-left lg:text-[5rem] mb-8">CAKEZONE</div>
+          <div className="text-white font-bold text-center lg:text-left text-3xl lg:text-[2.5rem] mb-[8px]">
             THE BEST CAKE IN LONDON
           </div>
-          <div className="flex mt-12 items-center justify-center lg:justify-start">
+          <div className="flex pt-12 items-center justify-center lg:justify-start">
             <button className="mr-[3rem]">
               <div className="p-[10px] bg-[#E88F2A]">
                 <div className="h-full px-7 lg:px-10 py-1 lg:py-2 border-white border-2 space-x-3 justify-center items-center">
