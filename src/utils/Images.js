@@ -1,5 +1,5 @@
-import hero from "../images/hero.jpg";
+import about from "../images/about.jpg";
 
 export const images = {
-    hero
+    about
 }
