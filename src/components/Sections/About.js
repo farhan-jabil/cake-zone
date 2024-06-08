@@ -7,18 +7,18 @@ const About = () => {
       <div className="about pt-[3rem]">
         <div className="container">
           <div className="section-title relative mb-[3rem]">
-            <div className="text-center text-[2rem] font-bold text-[#E88F2F] pacifico-family">
+            <div className="text-center text-2xl lg:text-[2rem] font-bold text-[#E88F2F] pacifico-family">
               About Us
             </div>
-            <div className="text-[3.5rem] font-bold text-center pb-4">
+            <div className="text-[40px] lg:text-[3.5rem] font-bold text-center pb-4">
               WELCOME TO CAKEZONE
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            <div className="lg:col-span-5 px-5">
+            <div className="lg:col-span-5 lg:px-5">
               <img src={images.about} alt="" />
             </div>
-            <div className="lg:col-span-6 px-5">
+            <div className="lg:col-span-6 lg:px-5">
               <div className="font-semibold text-2xl mb-6">
                 Tempor erat elitr rebum clita. Diam dolor diam ipsum erat lorem
                 sed stet labore lorem sit clita duo
