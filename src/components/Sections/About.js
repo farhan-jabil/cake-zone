@@ -63,6 +63,9 @@ const About = () => {
             <div className="lg:col-span-1"></div>
           </div>
         </div>
+        <div className="count p-12">
+
+        </div>
       </div>
     </>
   );

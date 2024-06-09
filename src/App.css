@@ -80,3 +80,7 @@ body {
     opacity: 0;
   }
 }
+
+.count {
+  background: url("images/count_bg.jpg");
+}
