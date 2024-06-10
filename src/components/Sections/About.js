@@ -64,7 +64,9 @@ const About = () => {
           </div>
         </div>
         <div className="count p-12">
-
+          <div className="container">
+            
+          </div>
         </div>
       </div>
     </>
