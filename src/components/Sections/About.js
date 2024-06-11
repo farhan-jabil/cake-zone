@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { images } from "../../utils/Images";
+import Counter from "../../utils/Counter";
 
 const About = () => {
+  const countdownRef = useRef(null);
+  const [isCounting, setIsCounting] = useState(false);
+
+  const handleIntersection = (entries) => {
+    const [entry] = entries;
+    if (entry.isIntersecting) {
+      setIsCounting(true);
+    }
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5,
+    });
+
+    const currentRef = countdownRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
   return (
     <>
       <div className="about pt-[3rem]">
@@ -63,7 +92,7 @@ const About = () => {
             <div className="lg:col-span-1"></div>
           </div>
         </div>
-        <div className="count">
+        <div className="count" ref={countdownRef}>
           <div className="container py-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 lg:gap-0 py-12">
               <div className="flex">
@@ -74,7 +103,9 @@ const About = () => {
                 </div>
                 <div className="pl-6">
                   <div className="text-[#E88F2A] lg:mb-2">OUR EXPERIENCE</div>
-                  <div className="text-white text-4xl lg:text-5xl font-bold">12345</div>
+                  <div className="text-white text-4xl lg:text-5xl font-bold">
+                    <Counter isCounting={isCounting} number={12345} />
+                  </div>
                 </div>
               </div>
               <div className="flex">
@@ -85,7 +116,9 @@ const About = () => {
                 </div>
                 <div className="pl-6">
                   <div className="text-[#E88F2A] lg:mb-2">CAKE SPECIALIST</div>
-                  <div className="text-white text-4xl lg:text-5xl font-bold">12345</div>
+                  <div className="text-white text-4xl lg:text-5xl font-bold">
+                    <Counter isCounting={isCounting} number={12345} />
+                  </div>
                 </div>
               </div>
               <div className="flex">
@@ -96,7 +129,9 @@ const About = () => {
                 </div>
                 <div className="pl-6">
                   <div className="text-[#E88F2A] lg:mb-2">COMPLETE PROJECT</div>
-                  <div className="text-white text-4xl lg:text-5xl font-bold">12345</div>
+                  <div className="text-white text-4xl lg:text-5xl font-bold">
+                    <Counter isCounting={isCounting} number={12345} />
+                  </div>
                 </div>
               </div>
               <div className="flex">
@@ -107,7 +142,9 @@ const About = () => {
                 </div>
                 <div className="pl-6">
                   <div className="text-[#E88F2A] lg:mb-2">OUR EXPERIENCE</div>
-                  <div className="text-white text-4xl lg:text-5xl font-bold">12345</div>
+                  <div className="text-white text-4xl lg:text-5xl font-bold">
+                    <Counter isCounting={isCounting} number={12345} />
+                  </div>
                 </div>
               </div>
             </div>
