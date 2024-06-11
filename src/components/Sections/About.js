@@ -65,49 +65,49 @@ const About = () => {
         </div>
         <div className="count">
           <div className="container py-12">
-            <div className="grid grid-cols-4 py-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 lg:gap-0 py-12">
               <div className="flex">
-                <div className="p-[10px] w-[60px] h-[60px] mb-6 bg-[#E88F2A]">
+                <div className="p-[10px] w-[50px] lg:w-[60px] h-[50px] lg:h-[60px] mb-6 bg-[#E88F2A]">
                   <div className="h-full flex border-white border-2 justify-center items-center">
-                    <i className="fa-solid fa-star text-white"></i>
+                    <i className="fa-solid fa-star text-sm lg:text-base text-white"></i>
                   </div>
                 </div>
                 <div className="pl-6">
-                  <div className="text-[#E88F2A] mb-2">OUR EXPERIENCE</div>
-                  <div className="text-white text-5xl font-bold">12345</div>
+                  <div className="text-[#E88F2A] lg:mb-2">OUR EXPERIENCE</div>
+                  <div className="text-white text-4xl lg:text-5xl font-bold">12345</div>
                 </div>
               </div>
               <div className="flex">
-                <div className="p-[10px] w-[60px] h-[60px] mb-6 bg-[#E88F2A]">
+                <div className="p-[10px] w-[50px] lg:w-[60px] h-[50px] lg:h-[60px] mb-6 bg-[#E88F2A]">
                   <div className="h-full flex border-white border-2 justify-center items-center">
-                    <i className="fa-solid fa-users text-white"></i>
+                    <i className="fa-solid fa-users text-sm lg:text-base text-white"></i>
                   </div>
                 </div>
                 <div className="pl-6">
-                  <div className="text-[#E88F2A] mb-2">CAKE SPECIALIST</div>
-                  <div className="text-white text-5xl font-bold">12345</div>
+                  <div className="text-[#E88F2A] lg:mb-2">CAKE SPECIALIST</div>
+                  <div className="text-white text-4xl lg:text-5xl font-bold">12345</div>
                 </div>
               </div>
               <div className="flex">
-                <div className="p-[10px] w-[60px] h-[60px] mb-6 bg-[#E88F2A]">
+                <div className="p-[10px] w-[50px] lg:w-[60px] h-[50px] lg:h-[60px] mb-6 bg-[#E88F2A]">
                   <div className="h-full flex border-white border-2 justify-center items-center">
-                    <i className="fa-solid fa-check text-white"></i>
+                    <i className="fa-solid fa-check text-sm lg:text-base text-white"></i>
                   </div>
                 </div>
                 <div className="pl-6">
-                  <div className="text-[#E88F2A] mb-2">COMPLETE PROJECT</div>
-                  <div className="text-white text-5xl font-bold">12345</div>
+                  <div className="text-[#E88F2A] lg:mb-2">COMPLETE PROJECT</div>
+                  <div className="text-white text-4xl lg:text-5xl font-bold">12345</div>
                 </div>
               </div>
               <div className="flex">
-                <div className="p-[10px] w-[60px] h-[60px] mb-6 bg-[#E88F2A]">
+                <div className="p-[10px] w-[50px] lg:w-[60px] h-[50px] lg:h-[60px] mb-6 bg-[#E88F2A]">
                   <div className="h-full flex border-white border-2 justify-center items-center">
-                    <i className="fa-solid fa-mug-hot text-white"></i>
+                    <i className="fa-solid fa-mug-hot text-sm lg:text-base text-white"></i>
                   </div>
                 </div>
                 <div className="pl-6">
-                  <div className="text-[#E88F2A] mb-2">OUR EXPERIENCE</div>
-                  <div className="text-white text-5xl font-bold">12345</div>
+                  <div className="text-[#E88F2A] lg:mb-2">OUR EXPERIENCE</div>
+                  <div className="text-white text-4xl lg:text-5xl font-bold">12345</div>
                 </div>
               </div>
             </div>
