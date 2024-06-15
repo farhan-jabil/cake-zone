@@ -1,5 +1,6 @@
 import React from "react";
 import { images } from "../../utils/Images";
+import { Data } from "../../utils/Data";
 
 const MenuPricing = () => {
   return (
@@ -27,23 +28,25 @@ const MenuPricing = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
+              {
+                
+              }
               <div className="flex">
                 <div className="">
                   <div>
-                    <img src={images.cakeBirthday} alt="" />
+                    <img src={Data.menu_pricing.birthday[0].image} alt="" />
                   </div>
                   <div className="bg-[#2B2825] text-[#E88F2A] p-2 font-semibold text-2xl text-center">
-                    $99.00
+                    ${Data.menu_pricing.birthday[0].price}
                   </div>
                 </div>
                 <div className="p-[10px] bg-[#FAF3EB]">
                   <div className="p-[10px] h-full text-white border-white border-2">
                     <div className="uppercase font-medium text-xl text-[#2B2825] mb-2">
-                      Birthday Cake
+                      {Data.menu_pricing.birthday[0].type}
                     </div>
                     <div className="text-[#656565] font-sans">
-                      Ipsum ipsum clita erat amet dolor sit justo sea eirmod
-                      diam stet sit justo
+                      {Data.menu_pricing.birthday[0].desc}
                     </div>
                   </div>
                 </div>
