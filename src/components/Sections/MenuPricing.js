@@ -17,7 +17,7 @@ const MenuPricing = () => {
           </div>
           <div className="menu-pricing">
             <div className="p-[10px] w-fit mb-12 mx-auto bg-[#2B2825]">
-              <div className="p-[10px] h-full text-white flex border-white border-2 justify-center items-center">
+              <div className="p-[10px] h-full text-white flex flex-col lg:flex-row border-white border-2 justify-center items-center">
                 <div className="py-2 px-4 bg-[#E88F2A] font-sans cursor-pointer">
                   BIRTHDAY
                 </div>
@@ -27,30 +27,29 @@ const MenuPricing = () => {
                 <div className="py-2 px-4 font-sans cursor-pointer">CUSTOM</div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              {
-                
-              }
-              <div className="flex">
-                <div className="">
-                  <div>
-                    <img src={Data.menu_pricing.birthday[0].image} alt="" />
-                  </div>
-                  <div className="bg-[#2B2825] text-[#E88F2A] p-2 font-semibold text-2xl text-center">
-                    ${Data.menu_pricing.birthday[0].price}
-                  </div>
-                </div>
-                <div className="p-[10px] bg-[#FAF3EB]">
-                  <div className="p-[10px] h-full text-white border-white border-2">
-                    <div className="uppercase font-medium text-xl text-[#2B2825] mb-2">
-                      {Data.menu_pricing.birthday[0].type}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-4">
+              {Data.menu_pricing.birthday.map((x, y) => (
+                <div className="flex flex-col md:flex-row" key={y}>
+                  <div className="">
+                    <div className="">
+                      <img src={x.image} className="w-full h-full" alt="" />
                     </div>
-                    <div className="text-[#656565] font-sans">
-                      {Data.menu_pricing.birthday[0].desc}
+                    <div className="bg-[#2B2825] text-[#E88F2A] p-2 font-semibold text-2xl text-center">
+                      ${x.price}
                     </div>
                   </div>
+                  <div className="p-[10px] bg-[#FAF3EB]">
+                    <div className="p-[10px] h-full text-white border-white border-2">
+                      <div className="uppercase font-medium text-xl text-[#2B2825] mb-2">
+                        {x.type}
+                      </div>
+                      <div className="text-[#656565] font-sans">
+                        {x.desc}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
