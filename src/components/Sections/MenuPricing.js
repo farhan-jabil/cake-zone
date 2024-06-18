@@ -83,6 +83,9 @@ const MenuPricing = () => {
             </div>
           </div>
         </div>
+        <div>
+          
+        </div>
       </div>
     </>
   );
