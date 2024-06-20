@@ -83,8 +83,10 @@ const MenuPricing = () => {
             </div>
           </div>
         </div>
-        <div>
-          
+        <div className="menu-pricing-discounts relative px-12 mt-12">
+          <div className="container">
+            
+          </div>
         </div>
       </div>
     </>

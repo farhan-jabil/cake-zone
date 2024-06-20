@@ -10,5 +10,5 @@ export const images = {
     cakeWedding,
     cakeCustom,
     service,
-    
+        
 }
