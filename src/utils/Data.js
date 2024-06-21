@@ -117,4 +117,21 @@ export const Data = {
       },
     ],
   },
+  chefs: [
+    {
+      img: images.chef1,
+      name: "Maxwell Carter",
+      designation: "Master Chef"
+    },
+    {
+      img: images.chef2,
+      name: "Alex Watson",
+      designation: "Chef Manager"
+    },
+    {
+      img: images.chef3,
+      name: "Jennifer Holly",
+      designation: "Executive Chef"
+    },
+  ]
 };

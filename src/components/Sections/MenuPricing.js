@@ -16,7 +16,7 @@ const MenuPricing = () => {
 
   return (
     <>
-      <div className="menu-pricing pt-[3rem]">
+      <div className="menu-pricing pt-[3rem] mb-36">
         <div className="container">
           <div className="section-title relative mb-[3rem]">
             <div className="text-center text-2xl lg:text-[2rem] font-bold text-[#E88F2F] pacifico-family">
