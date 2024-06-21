@@ -90,8 +90,8 @@ body {
   position: absolute;
   content: "";
   width: 100% !important;
-  height: 400px;
-  top: 135px;
+  height: 100%;
+  top: 100px;
   left: 0;
   background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url("images/service.jpg") center center no-repeat;
   background-size: cover;
