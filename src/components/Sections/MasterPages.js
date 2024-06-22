@@ -51,8 +51,41 @@ const MasterPages = () => {
             ))}
           </div>
         </div>
-        <div className="special-combo">
-          
+        <div className="special-combo my-12 py-12">
+          <div className="container py-12">
+            <div className="section-title relative mb-6">
+              <div className="text-center text-2xl lg:text-[2rem] font-bold text-[#E88F2F] pacifico-family">
+                Special Combo Pack
+              </div>
+              <div className="text-[40px] lg:text-[3.5rem] font-bold text-center text-white pb-4">
+                SUPER CRISPY CAKES
+              </div>
+            </div>
+            <div className="text-center lg:w-[55%] mx-auto">
+              <div className="text-white font-sans">
+                Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et
+                dolore et at sea ea at dolor justo ipsum duo rebum sea. Eos vero
+                eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr
+                ut dolores magna sit. Sea dolore sed et.
+              </div>
+              <div className="mt-10 lg:mt-6 flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+                <button>
+                  <div className="p-[10px] bg-[#E88F2A]">
+                    <div className="h-full px-7 lg:px-10 py-1 lg:py-2 border-white border-2 space-x-3 justify-center items-center">
+                      <div className="font-bold text-white">Shop Now</div>
+                    </div>
+                  </div>
+                </button>
+                <button>
+                  <div className="p-[10px] bg-[#2B2825]">
+                    <div className="h-full px-7 lg:px-10 py-1 lg:py-2 border-white border-2 space-x-3 justify-center items-center">
+                      <div className="font-bold text-white">Read More</div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
