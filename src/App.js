@@ -17,8 +17,8 @@ function App() {
         <Hero/>
         <About/>
         <MenuPricing/>
-        <MasterPages/>
         <Service/>
+        <MasterPages/>
         <Testimonial/>
         <Contact/>
     </>

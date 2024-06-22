@@ -61,6 +61,17 @@ const NavbarBottom = () => {
                 </li>
                 <li className="py-8 px-4 cursor-pointer">
                   <Link
+                    to="master-chefs"
+                    smooth={true}
+                    spy={true}
+                    activeClass="active"
+                    className="block rounded transition duration-500 ease-in-out text-white hover:text-[#E88F2F] md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  >
+                    MASTER CHEFS
+                  </Link>
+                </li>
+                <li className="py-8 px-4 cursor-pointer">
+                  <Link
                     to="testimonial"
                     smooth={true}
                     spy={true}

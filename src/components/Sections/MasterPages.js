@@ -4,7 +4,7 @@ import { Data } from "../../utils/Data";
 const MasterPages = () => {
   return (
     <>
-      <div className="master-pages py-12">
+      <div className="master-chefs py-12">
         <div className="container">
           <div className="section-title relative mb-[3rem]">
             <div className="text-center text-2xl lg:text-[2rem] font-bold text-[#E88F2F] pacifico-family">
@@ -14,7 +14,7 @@ const MasterPages = () => {
               Our Master Chefs
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {Data.chefs.map((x, y) => (
               <div key={y}>
                 <div className="chef-image relative">
@@ -50,6 +50,9 @@ const MasterPages = () => {
               </div>
             ))}
           </div>
+        </div>
+        <div className="special-combo">
+          
         </div>
       </div>
     </>

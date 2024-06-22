@@ -86,7 +86,7 @@ body {
   background-size: cover;
 }
 
-.menu-pricing-discounts::after {
+.service::after {
   position: absolute;
   content: "";
   width: 100% !important;
@@ -109,5 +109,9 @@ body {
 
 .chef-image:hover .chef-social-icons{
   display: flex;
+}
+
+.special-combo {
+  background: url("images/offer.jpg");
 }
 
