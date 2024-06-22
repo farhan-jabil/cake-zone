@@ -112,6 +112,7 @@ body {
 }
 
 .special-combo {
-  background: url("images/offer.jpg");
+  background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url("images/offer.jpg") center center no-repeat;
+  background-size: cover;
 }
 
