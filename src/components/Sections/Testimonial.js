@@ -11,24 +11,24 @@ const Testimonial = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    dotsClass: "custom-dots", // Custom class for the dots
+    responsive: [
+      {
+        breakpoint: 1024, // Adjust the breakpoint as needed
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2, // Show and scroll 2 slides at this breakpoint
+        },
+      },
+      {
+        breakpoint: 767, // Adjust the breakpoint as needed
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1, // Show and scroll 1 slide at this breakpoint
+        },
+      },
+    ],
   };
-
-  const responsiveSettings = [
-    {
-      breakpoint: 1024, // Adjust the breakpoint as needed
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2, // Show and scroll 2 slides at this breakpoint
-      },
-    },
-    {
-      breakpoint: 767, // Adjust the breakpoint as needed
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1, // Show and scroll 1 slide at this breakpoint
-      },
-    },
-  ];
 
   return (
     <>
@@ -44,9 +44,9 @@ const Testimonial = () => {
           </div>
           <div className="container">
             <div>
-              <Slider {...settings} responsive={responsiveSettings}>
+              <Slider {...settings}>
                 {Data.testimonial.map((x, y) => (
-                  <div key={y} className="p-[10px] bg-[#2B2825]">
+                  <div key={y} className="p-[10px] !w-[400px] mb-[30px] bg-[#2B2825]">
                     <div className="p-[10px] h-full border-white border-2">
                       <div className="flex">
                         <div>
@@ -65,7 +65,7 @@ const Testimonial = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="text-white font-sans">{x.desc}</div>
+                      <div className="text-white font-sans mt-4">{x.desc}</div>
                     </div>
                   </div>
                 ))}

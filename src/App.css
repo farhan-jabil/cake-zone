@@ -116,5 +116,41 @@ body {
   background-size: cover;
 }
 
+/* Testimonial.css */
+.custom-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.custom-dots li {
+  margin: 0 3px;
+  display: flex;
+}
+
+.custom-dots li button {
+  font-size: 0;
+  border: none;
+  background: #ccc;
+  width: 10px;
+  height: 25px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.custom-dots li.slick-active button {
+  background: #E88F2F;
+  height: 45px;
+}
+
+
+
+
+
+
+
 
 
