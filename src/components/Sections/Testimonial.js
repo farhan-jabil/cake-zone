@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Data } from "../../utils/Data";
 
 const Testimonial = () => {
   const settings = {
@@ -33,7 +34,7 @@ const Testimonial = () => {
     <>
       <div className="testimonial">
         <div>
-          <div className="section-title relative mb-6">
+          <div className="section-title relative mb-12">
             <div className="text-center text-2xl lg:text-[2rem] font-bold text-[#E88F2F] pacifico-family">
               Testimonial
             </div>
@@ -44,66 +45,30 @@ const Testimonial = () => {
           <div className="container">
             <div>
               <Slider {...settings} responsive={responsiveSettings}>
-                <div className="testimonial-elements card">
-                  <div className="text-1">
-                    <span className="fw-bold fst-italic fs-1">"</span> It's
-                    great to be able to work out from home and be helped by the
-                    gymbaran. My day feels fresher when I regularly participate
-                    in this fun sport. Good luck to the coaches.
-                  </div>
-                  <div className="testimonial-info d-flex">
-                    <div className="testimonial-info-dp">
-                    </div>
-                    <div className="testimonial-info-name-desc ms-5 d-flex flex-column justify-content-center">
-                      <div className="testimonial-info-name text-3">
-                        Suketi Mantapo
+                {Data.testimonial.map((x, y) => (
+                  <div key={y} className="p-[10px] bg-[#2B2825]">
+                    <div className="p-[10px] h-full border-white border-2">
+                      <div className="flex">
+                        <div>
+                          <img
+                            className="w-[60px] h-[60px]"
+                            src={x.img}
+                            alt=""
+                          />
+                        </div>
+                        <div className="ml-4">
+                          <div className="text-[#E88F2A] text-2xl font-semibold uppercase">
+                            {x.name}
+                          </div>
+                          <div className="text-white font-sans">
+                            {x.profession}
+                          </div>
+                        </div>
                       </div>
-                      <div className="testimonial-info-desc text-1">
-                        Designer Graphic
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="testimonial-elements card">
-                  <div className="text-1">
-                    <span className="fw-bold fst-italic fs-1">"</span> My
-                    attitude toward exercise completely transformed after
-                    discovering Gymbaran. What used to be a dull routine is now
-                    a vibrant and invigorating part of my life.
-                  </div>
-                  <div className="testimonial-info d-flex">
-                    <div className="testimonial-info-dp">
-                    </div>
-                    <div className="testimonial-info-name-desc ms-5 d-flex flex-column justify-content-center">
-                      <div className="testimonial-info-name text-3">
-                        Max Wayne
-                      </div>
-                      <div className="testimonial-info-desc text-1">
-                        Designer Graphic
-                      </div>
+                      <div className="text-white font-sans">{x.desc}</div>
                     </div>
                   </div>
-                </div>
-                <div className="testimonial-elements card">
-                  <div className="text-1">
-                    <span className="fw-bold fst-italic fs-1">"</span> Exercise
-                    used to be a boring thing for me, but after following the
-                    gymbaran I became fond of sports and sports became my new
-                    hobby. I participate in sports 5 times a week.
-                  </div>
-                  <div className="testimonial-info d-flex">
-                    <div className="testimonial-info-dp">
-                    </div>
-                    <div className="testimonial-info-name-desc ms-5 d-flex flex-column justify-content-center">
-                      <div className="testimonial-info-name text-3">
-                        Ada Apose
-                      </div>
-                      <div className="testimonial-info-desc text-1">
-                        Designer Graphic
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </Slider>
             </div>
           </div>

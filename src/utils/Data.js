@@ -133,5 +133,31 @@ export const Data = {
       name: "Jennifer Holly",
       designation: "Executive Chef"
     },
+  ],
+  testimonial: [
+    {
+      img: images.testimonail1,
+      name: "Clint Willson",
+      profession: "Engineer",
+      desc: "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam"
+    },
+    {
+      img: images.testimonail2,
+      name: "Clint Willson",
+      profession: "Engineer",
+      desc: "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam"
+    },
+    {
+      img: images.testimonail3,
+      name: "Clint Willson",
+      profession: "Engineer",
+      desc: "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam"
+    },
+    {
+      img: images.testimonail4,
+      name: "Clint Willson",
+      profession: "Engineer",
+      desc: "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam"
+    },
   ]
 };
