@@ -46,7 +46,7 @@ const Testimonial = () => {
             <div>
               <Slider {...settings}>
                 {Data.testimonial.map((x, y) => (
-                  <div key={y} className="p-[10px] !w-[400px] mb-[30px] bg-[#2B2825]">
+                  <div key={y} className="p-[10px] mx-auto !w-[290px] lg:!w-[400px] mr-10 mb-[30px] bg-[#2B2825]">
                     <div className="p-[10px] h-full border-white border-2">
                       <div className="flex">
                         <div>
