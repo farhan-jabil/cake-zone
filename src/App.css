@@ -99,7 +99,7 @@ body {
 }
 
 .chef-image img {
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
 .chef-image:hover img {
@@ -107,7 +107,7 @@ body {
   filter: blur(5px);
 }
 
-.chef-image:hover .chef-social-icons{
+.chef-image:hover .chef-social-icons {
   display: flex;
 }
 
@@ -145,11 +145,7 @@ body {
   height: 45px;
 }
 
-
-
-
-
-
-
-
-
+.contact {
+  background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url("images/count_bg.jpg") center center no-repeat;
+  background-size: cover;
+}

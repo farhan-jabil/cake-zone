@@ -159,5 +159,10 @@ export const Data = {
       profession: "Engineer",
       desc: "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam"
     },
-  ]
+  ],
+  contact : {
+    location: "123 Street, New York, USA",
+    mail: "info@example.com",
+    phone: 1234567890,
+  }
 };
