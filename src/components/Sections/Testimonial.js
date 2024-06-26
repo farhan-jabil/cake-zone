@@ -32,7 +32,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <div className="testimonial">
+      <div className="testimonial pb-12">
         <div>
           <div className="section-title relative mb-12">
             <div className="text-center text-2xl lg:text-[2rem] font-bold text-[#E88F2F] pacifico-family">
@@ -65,7 +65,7 @@ const Testimonial = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="text-white font-sans mt-4">{x.desc}</div>
+                      <div className="text-white font-sans mt-4 w-[90%]">{x.desc}</div>
                     </div>
                   </div>
                 ))}
