@@ -1,21 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 const NavbarBottom = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsNavbarFixed(true);
+      } else {
+        setIsNavbarFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
+      <style jsx>{`
+        .navbar-transition {
+          transition: top 5s ease-in-out, padding 0.3s ease-in-out;
+        }
+      `}</style>
       <div>
-        <nav className="hidden lg:block bg-[#2B2825] border-gray-200 dark:bg-gray-900">
+        <nav
+          className={`navbar-transition ${
+            isNavbarFixed ? "fixed top-0 left-0 right-0 z-50" : ""
+          } hidden lg:block bg-[#2B2825] border-gray-200 dark:bg-gray-900`}
+        >
           <div className="max-w-screen-xl flex items-center mx-auto">
             <div className="mx-auto w-full md:w-auto" id="navbar-default">
               <ul className="font-medium text-lg flex flex-col mt-4 border border-gray-100 rounded-lg md:flex-row rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li className="py-8 px-4 cursor-pointer">
+                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
                   <Link
                     to="hero"
                     smooth={true}
@@ -26,7 +52,7 @@ const NavbarBottom = () => {
                     HOME
                   </Link>
                 </li>
-                <li className="py-8 px-4 cursor-pointer">
+                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
                   <Link
                     to="about"
                     smooth={true}
@@ -37,7 +63,7 @@ const NavbarBottom = () => {
                     ABOUT US
                   </Link>
                 </li>
-                <li className="py-8 px-4 cursor-pointer">
+                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
                   <Link
                     to="menu-pricing"
                     smooth={true}
@@ -48,7 +74,7 @@ const NavbarBottom = () => {
                     MENU & PRICING
                   </Link>
                 </li>
-                <li className="py-8 px-4 cursor-pointer">
+                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
                   <Link
                     to="service"
                     smooth={true}
@@ -59,7 +85,7 @@ const NavbarBottom = () => {
                     SERVICES
                   </Link>
                 </li>
-                <li className="py-8 px-4 cursor-pointer">
+                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
                   <Link
                     to="master-chefs"
                     smooth={true}
@@ -70,7 +96,7 @@ const NavbarBottom = () => {
                     MASTER CHEFS
                   </Link>
                 </li>
-                <li className="py-8 px-4 cursor-pointer">
+                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
                   <Link
                     to="testimonial"
                     smooth={true}
@@ -81,7 +107,7 @@ const NavbarBottom = () => {
                     TESTIMONIAL
                   </Link>
                 </li>
-                <li className="py-8 px-4 cursor-pointer">
+                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
                   <Link
                     to="contact"
                     smooth={true}
@@ -96,7 +122,11 @@ const NavbarBottom = () => {
             </div>
           </div>
         </nav>
-        <nav className="block lg:hidden bg-[#2B2825] border-b-[1px] border-gray-200 dark:bg-gray-900 p-4">
+        <nav
+          className={`navbar-transition ${
+            isNavbarFixed ? "fixed top-0 left-0 right-0 z-50" : ""
+          } block lg:hidden bg-[#2B2825] border-b-[1px] border-gray-200 dark:bg-gray-900 p-4`}
+        >
           <div className="flex justify-between items-center">
             <a href="#home">
               <div className="flex h-full text-[26px] space-x-3 justify-center items-center">
