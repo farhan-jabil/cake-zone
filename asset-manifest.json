@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/cake-zone/static/css/main.269eec9f.css",
+    "main.js": "/cake-zone/static/js/main.21839cd2.js",
+    "static/js/453.02fb0d20.chunk.js": "/cake-zone/static/js/453.02fb0d20.chunk.js",
+    "static/media/hero.jpg": "/cake-zone/static/media/hero.1f3d677412e70cf16d6b.jpg",
+    "static/media/offer.jpg": "/cake-zone/static/media/offer.277d0d07a9a3f0df8b31.jpg",
+    "static/media/service.jpg": "/cake-zone/static/media/service.100ba6da75c40df4fae6.jpg",
+    "static/media/about.jpg": "/cake-zone/static/media/about.cff1e3da1f7be51e9820.jpg",
+    "static/media/team-3.jpg": "/cake-zone/static/media/team-3.d7ee919f942fd21690fd.jpg",
+    "static/media/count_bg.jpg": "/cake-zone/static/media/count_bg.23fd31ca827539b60d74.jpg",
+    "static/media/team-1.jpg": "/cake-zone/static/media/team-1.e1290582d49608cdf97b.jpg",
+    "static/media/team-2.jpg": "/cake-zone/static/media/team-2.b6f1d324b0357d9dfc5a.jpg",
+    "static/media/slick.svg": "/cake-zone/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/cake-zone/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/cake-zone/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/cake-zone/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/cake-zone/index.html",
+    "main.269eec9f.css.map": "/cake-zone/static/css/main.269eec9f.css.map",
+    "main.21839cd2.js.map": "/cake-zone/static/js/main.21839cd2.js.map",
+    "453.02fb0d20.chunk.js.map": "/cake-zone/static/js/453.02fb0d20.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.269eec9f.css",
+    "static/js/main.21839cd2.js"
+  ]
+}
