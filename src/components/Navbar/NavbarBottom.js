@@ -257,7 +257,7 @@ const NavbarBottom = () => {
             className={`${topButton} fixed right-3 lg:right-10 text-white rounded-lg bottom-5 p-1 bg-[#E88F2F]`}
           >
             <div className="border border-white p-2 rounded-lg">
-              <i class="fa-solid fa-up-long"></i>
+              <i className="fa-solid fa-up-long"></i>
             </div>
           </Link>
         </div>
