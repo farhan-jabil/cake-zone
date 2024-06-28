@@ -250,14 +250,14 @@ const NavbarBottom = () => {
             </ul>
           </div>
         </nav>
-        <div className="cursor-pointer opacity-100">
+        <div className="cursor-pointer z-[100]">
           <Link
             to="hero"
             smooth={true}
             className={`${topButton} fixed right-3 lg:right-10 text-white rounded-lg bottom-5 p-1 bg-[#E88F2F]`}
           >
             <div className="border border-white p-2 rounded-lg">
-              <i className="fa-solid fa-chevron-up"></i>
+              <i class="fa-solid fa-up-long"></i>
             </div>
           </Link>
         </div>
