@@ -21,7 +21,7 @@ const Hero = () => {
               </div>
             </button>
             <button className="btn-play relative flex items-center justify-center mr-[1.5rem] bg-white h-[16px] w-[16px] p-[32px] rounded-[100%]">
-              <i class="fa-solid fa-play text-[22px] z-10 text-[#E88F2A]"></i>
+              <i className="fa-solid fa-play text-[22px] z-10 text-[#E88F2A]"></i>
             </button>
             <div className="hidden md:block text-white text-[1.25rem] font-bold">
               Play Video

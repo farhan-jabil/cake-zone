@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 const NavbarBottom = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+  const [topButton, setTopButton] = useState("hidden");
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -13,8 +14,10 @@ const NavbarBottom = () => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
         setIsNavbarFixed(true);
+        setTopButton("block");
       } else {
         setIsNavbarFixed(false);
+        setTopButton("hidden");
       }
     };
 
@@ -27,11 +30,6 @@ const NavbarBottom = () => {
 
   return (
     <>
-      <style jsx>{`
-        .navbar-transition {
-          transition: top 5s ease-in-out, padding 0.3s ease-in-out;
-        }
-      `}</style>
       <div>
         <nav
           className={`navbar-transition ${
@@ -41,7 +39,11 @@ const NavbarBottom = () => {
           <div className="max-w-screen-xl flex items-center mx-auto">
             <div className="mx-auto w-full md:w-auto" id="navbar-default">
               <ul className="font-medium text-lg flex flex-col mt-4 border border-gray-100 rounded-lg md:flex-row rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
+                <li
+                  className={`${
+                    isNavbarFixed ? "py-5" : "py-8"
+                  } px-4 cursor-pointer`}
+                >
                   <Link
                     to="hero"
                     smooth={true}
@@ -52,7 +54,11 @@ const NavbarBottom = () => {
                     HOME
                   </Link>
                 </li>
-                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
+                <li
+                  className={`${
+                    isNavbarFixed ? "py-5" : "py-8"
+                  } px-4 cursor-pointer`}
+                >
                   <Link
                     to="about"
                     smooth={true}
@@ -63,7 +69,11 @@ const NavbarBottom = () => {
                     ABOUT US
                   </Link>
                 </li>
-                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
+                <li
+                  className={`${
+                    isNavbarFixed ? "py-5" : "py-8"
+                  } px-4 cursor-pointer`}
+                >
                   <Link
                     to="menu-pricing"
                     smooth={true}
@@ -74,7 +84,11 @@ const NavbarBottom = () => {
                     MENU & PRICING
                   </Link>
                 </li>
-                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
+                <li
+                  className={`${
+                    isNavbarFixed ? "py-5" : "py-8"
+                  } px-4 cursor-pointer`}
+                >
                   <Link
                     to="service"
                     smooth={true}
@@ -85,7 +99,11 @@ const NavbarBottom = () => {
                     SERVICES
                   </Link>
                 </li>
-                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
+                <li
+                  className={`${
+                    isNavbarFixed ? "py-5" : "py-8"
+                  } px-4 cursor-pointer`}
+                >
                   <Link
                     to="master-chefs"
                     smooth={true}
@@ -96,7 +114,11 @@ const NavbarBottom = () => {
                     MASTER CHEFS
                   </Link>
                 </li>
-                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
+                <li
+                  className={`${
+                    isNavbarFixed ? "py-5" : "py-8"
+                  } px-4 cursor-pointer`}
+                >
                   <Link
                     to="testimonial"
                     smooth={true}
@@ -107,7 +129,11 @@ const NavbarBottom = () => {
                     TESTIMONIAL
                   </Link>
                 </li>
-                <li className={`${isNavbarFixed ? "py-5" : "py-8"} px-4 cursor-pointer`}>
+                <li
+                  className={`${
+                    isNavbarFixed ? "py-5" : "py-8"
+                  } px-4 cursor-pointer`}
+                >
                   <Link
                     to="contact"
                     smooth={true}
@@ -224,6 +250,17 @@ const NavbarBottom = () => {
             </ul>
           </div>
         </nav>
+        <div className="cursor-pointer opacity-100">
+          <Link
+            to="hero"
+            smooth={true}
+            className={`${topButton} fixed right-3 lg:right-10 text-white rounded-lg bottom-5 p-1 bg-[#E88F2F]`}
+          >
+            <div className="border border-white p-2 rounded-lg">
+              <i className="fa-solid fa-chevron-up"></i>
+            </div>
+          </Link>
+        </div>
       </div>
     </>
   );

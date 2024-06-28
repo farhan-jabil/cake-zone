@@ -11,7 +11,7 @@ const Contact = () => {
             <div className="h-full p-3 flex flex-col items-center justify-center border-white border-2">
               <div className="flex text-[2.5rem]">
                 <div>
-                  <i class="fa-solid fa-cake-candles"></i>
+                  <i className="fa-solid fa-cake-candles"></i>
                 </div>
                 <div className="font-bold text-white">CAKEZONE</div>
               </div>
@@ -32,19 +32,19 @@ const Contact = () => {
               <div className="font-sans space-y-[.5rem]">
                 <div className="flex space-x-2">
                   <div>
-                    <i class="fa-solid fa-location-dot text-[#E88F2A]"></i>
+                    <i className="fa-solid fa-location-dot text-[#E88F2A]"></i>
                   </div>
                   <div className="text-white">{Data.contact.location}</div>
                 </div>
                 <div className="flex space-x-2">
                   <div>
-                    <i class="fa-solid fa-envelope text-[#E88F2A]"></i>
+                    <i className="fa-solid fa-envelope text-[#E88F2A]"></i>
                   </div>
                   <div className="text-white">{Data.contact.mail}</div>
                 </div>
                 <div className="flex space-x-2">
                   <div>
-                    <i class="fa-solid fa-phone text-[#E88F2A]"></i>
+                    <i className="fa-solid fa-phone text-[#E88F2A]"></i>
                   </div>
                   <div className="text-white">{Data.contact.phone}</div>
                 </div>
@@ -78,7 +78,7 @@ const Contact = () => {
                   className="flex space-x-2 cursor-pointer"
                 >
                   <div>
-                    <i class="fa-solid fa-arrow-right text-[#E88F2A]"></i>
+                    <i className="fa-solid fa-arrow-right text-[#E88F2A]"></i>
                   </div>
                   <div className="text-white">Home</div>
                 </Link>
@@ -88,7 +88,7 @@ const Contact = () => {
                   className="flex space-x-2 cursor-pointer"
                 >
                   <div>
-                    <i class="fa-solid fa-arrow-right text-[#E88F2A]"></i>
+                    <i className="fa-solid fa-arrow-right text-[#E88F2A]"></i>
                   </div>
                   <div className="text-white">About Us</div>
                 </Link>
@@ -98,7 +98,7 @@ const Contact = () => {
                   className="flex space-x-2 cursor-pointer"
                 >
                   <div>
-                    <i class="fa-solid fa-arrow-right text-[#E88F2A]"></i>
+                    <i className="fa-solid fa-arrow-right text-[#E88F2A]"></i>
                   </div>
                   <div className="text-white">Our Services</div>
                 </Link>
@@ -108,7 +108,7 @@ const Contact = () => {
                   className="flex space-x-2 cursor-pointer"
                 >
                   <div>
-                    <i class="fa-solid fa-arrow-right text-[#E88F2A]"></i>
+                    <i className="fa-solid fa-arrow-right text-[#E88F2A]"></i>
                   </div>
                   <div className="text-white">Meet The Team</div>
                 </Link>
@@ -118,7 +118,7 @@ const Contact = () => {
                   className="flex space-x-2 cursor-pointer"
                 >
                   <div>
-                    <i class="fa-solid fa-arrow-right text-[#E88F2A]"></i>
+                    <i className="fa-solid fa-arrow-right text-[#E88F2A]"></i>
                   </div>
                   <div className="text-white">Reviews</div>
                 </Link>

@@ -16,7 +16,7 @@ const Service = () => {
               </div>
               <div className="flex items-center justify-center space-x-2">
                 <div className="font-sans">Read More</div>
-                <i class="fa-solid fa-arrow-right"></i>
+                <i className="fa-solid fa-arrow-right"></i>
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@ const Service = () => {
               </div>
               <div className="flex items-center justify-center space-x-2">
                 <div className="font-sans">Read More</div>
-                <i class="fa-solid fa-arrow-right"></i>
+                <i className="fa-solid fa-arrow-right"></i>
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Service = () => {
               </div>
               <div className="flex items-center justify-center space-x-2">
                 <div className="font-sans">Read More</div>
-                <i class="fa-solid fa-arrow-right"></i>
+                <i className="fa-solid fa-arrow-right"></i>
               </div>
             </div>
           </div>
