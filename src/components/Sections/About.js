@@ -50,7 +50,7 @@ const About = () => {
             <div className="lg:col-span-6 lg:px-5">
               <div className="font-semibold text-xl lg:text-2xl mb-6">
                 Tempor erat elitr rebum clita. Diam dolor diam ipsum erat lorem
-                sed stet labore lorem sit clita duo
+                sed stet labore lorem sit clita
               </div>
               <div className="mb-12 text-[#656565] leading-6 font-sans text-lg lg:text-base">
                 Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et

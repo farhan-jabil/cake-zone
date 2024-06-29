@@ -19,7 +19,7 @@ const MasterPages = () => {
               <div key={y}>
                 <div className="chef-image relative">
                   <div className="overflow-hidden">
-                    <img src={x.img} alt="" />
+                    <img src={x.img} className="w-full" alt="" />
                   </div>
                   <div className="chef-social-icons hidden space-x-3 justify-center absolute left-[50%] top-[50%] transform -translate-x-1/2 -translate-y-1/2">
                     <div className="p-[10px] w-[50px] h-[50px] bg-[#E88F2A] cursor-pointer">

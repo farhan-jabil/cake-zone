@@ -28,7 +28,7 @@ const MenuPricing = () => {
           </div>
           <div className="menu-pricing">
             <div className="p-[10px] w-fit mb-12 mx-auto bg-[#2B2825]">
-              <div className="p-[10px] h-full text-white flex flex-col lg:flex-row border-white border-2 justify-center items-center">
+              <div className="p-[10px] h-full text-white flex flex-col md:flex-row border-white border-2 justify-center items-center">
                 <div
                   className={`py-2 px-4 font-sans cursor-pointer ${
                     selectedCategory === "birthday" ? "bg-[#E88F2A]" : ""
