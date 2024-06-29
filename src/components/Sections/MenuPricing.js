@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { images } from "../../utils/Images";
 import { Data } from "../../utils/Data";
 
 const MenuPricing = () => {
